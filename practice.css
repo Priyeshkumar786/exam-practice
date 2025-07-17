@@ -1,16 +1,9 @@
 /* Basic Reset & Body Styles */
-body {
-    /* margin: 0; */
-    /* padding: 0; */
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
+#resume{
+
+    
 }
 
-     #big{
-        display: flex;
-        justify-content: space-between;
-
-     }
 
 
 
@@ -37,7 +30,14 @@ body {
     object-fit: cover;
 }
 
+#left .text{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
 
+}
 
 #left div h3{
 
@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 25vh;
+    /* margin-top: 25vh; */
     padding-left: 10%;
     
 
@@ -65,7 +65,7 @@ body {
 
     height: 100vh;
     width: 58%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     margin: 5px;
     
@@ -80,3 +80,123 @@ body {
     margin-top: 30px;
     margin-left: 35px;
 }
+
+
+
+
+
+.left-column ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    position: relative;
+    padding-left: 15px; /* Space for custom bullet */
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.left-column ul li::before {
+    content: '•'; /* Custom bullet point */
+    color: var(--text-light); /* Color of the bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Right Column Styles */
+.right-column {
+    padding: 30px 40px;
+    width: 65%; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: var(--section-spacing);
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    font-family: var(--primary-font);
+    font-size: 2.8em;
+    margin: 0 0 5px 0;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .job-title {
+    font-family: var(--secondary-font);
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+}
+
+.right-column .section {
+    margin-bottom: var(--section-spacing);
+}
+
+.right-column h2 {
+    font-family: var(--primary-font);
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee; /* Thicker border for main sections */
+    padding-bottom: 5px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+
+.profile p {
+    font-size: 1em;
+    margin-bottom: 0;
+    color: var(--text-dark);
+}
+
+.job-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.job-header, .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-item h3, .education-item h3 {
+    font-family: var(--primary-font);
+    font-size: 1.15em;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+.job-item .date, .education-item .date {
+    font-size: 0.9em;
+    color: #666;
+    white-space: nowrap; /* Prevents date from wrapping */
+}
+
+.job-item .company, .education-item .university {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.work-experience ul, .education ul {
+    list-style: disc; /* Default disc bullets */
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.work-experience ul li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: var(--text-dark);
+}
+
+
